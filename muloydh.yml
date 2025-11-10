@@ -60,18 +60,11 @@ dependencies:
   - r-vcfr
 
 
-Notes:
-
-java-1_8_0-openjdk-devel maps to openjdk=8.
-
-vi maps to vim.
-
-time is gnu-time.
-
-bedtools2 is bedtools in bioconda.
-
-BWA 0.7.16a is not on bioconda; 0.7.17 is the maintained build.
-
-GEMTools-static-i3-1.7.1 is not in conda. Install it manually outside the env if you must keep that exact version.
-
-The R lines using biocLite are obsolete. Packages are preinstalled via bioconductor-* and r-* entries.
+##Notes:
+# java-1_8_0-openjdk-devel maps to openjdk=8.
+# vi maps to vim.
+# time is gnu-time.
+# bedtools2 is bedtools in bioconda.
+# BWA 0.7.16a is not on bioconda; 0.7.17 is the maintained build.
+# GEMTools-static-i3-1.7.1 is not in conda. Install it manually outside the env if you must keep that exact version.
+# The R lines using biocLite are obsolete. Packages are preinstalled via bioconductor-* and r-* entries.
