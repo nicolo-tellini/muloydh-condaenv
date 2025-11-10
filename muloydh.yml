@@ -1,0 +1,77 @@
+name: muloydh-env
+channels:
+  - conda-forge
+  - bioconda
+  - defaults
+dependencies:
+  # Core tooling
+  - python=3.9
+  - r-base=4.0.2
+  - openjdk=8
+  - curl
+  - wget
+  - unzip
+  - gzip
+  - tar
+  - bzip2
+  - xz
+  - git
+  - vim
+  - gnu-time
+  - perl
+  - make
+  - autoconf
+  - automake
+  - pkg-config
+  - cmake
+  - tcsh
+
+  # Libraries and headers
+  - zlib
+  - libbz2
+  - libcurl
+  - openssl
+  - ncurses
+  - libxml2
+
+  # Compilers (Linux)
+  - gcc_linux-64
+  - gxx_linux-64
+  - gfortran_linux-64
+
+  # NGS stack (pinned where requested)
+  - samtools=1.9
+  - bcftools=1.9
+  - htslib=1.9
+  - fastqc=0.11.8
+  - bwa=0.7.17        # closest to 0.7.16a on bioconda
+  - bedtools          # bedtools2
+  - mummer=3.23
+  - vcftools
+  - freebayes
+  - freec             # Control-FREEC
+
+  # R CRAN/Bioconductor packages
+  - bioconductor-iranges
+  - bioconductor-rtracklayer
+  - r-ape
+  - r-ggplot2
+  - r-scales
+  - r-vcfr
+
+
+Notes:
+
+java-1_8_0-openjdk-devel maps to openjdk=8.
+
+vi maps to vim.
+
+time is gnu-time.
+
+bedtools2 is bedtools in bioconda.
+
+BWA 0.7.16a is not on bioconda; 0.7.17 is the maintained build.
+
+GEMTools-static-i3-1.7.1 is not in conda. Install it manually outside the env if you must keep that exact version.
+
+The R lines using biocLite are obsolete. Packages are preinstalled via bioconductor-* and r-* entries.
