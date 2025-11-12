@@ -1,4 +1,4 @@
-name: muloydh-env
+name: muloydh
 channels:
   - conda-forge
   - bioconda
