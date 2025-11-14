@@ -40,9 +40,9 @@ dependencies:
   - gfortran_linux-64
 
   # NGS stack (pinned where requested)
-  - samtools=
+  - samtools
   - bcftools
-  - htslib=
+  - htslib
   - fastqc=0.11.8
   - bwa=0.7.17        # closest to 0.7.16a on bioconda
   - bedtools          # bedtools2
